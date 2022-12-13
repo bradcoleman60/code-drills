@@ -1,0 +1,112 @@
+This is the command line drills for Code Drill 01-Command-line
+
+NOTE new command "mv" that is used to rename and move files!!!!
+
+
+bradc@LAPTOP-MO975D0T MINGW64 ~
+$ pwd
+/c/Users/bradc
+
+bradc@LAPTOP-MO975D0T MINGW64 ~
+$ cd bootcamp
+
+bradc@LAPTOP-MO975D0T MINGW64 ~/bootcamp
+$ ls
+first-day.txt  first-day-repo/  prework-study-guide/
+
+bradc@LAPTOP-MO975D0T MINGW64 ~/bootcamp
+$ mkdir activity-1
+
+bradc@LAPTOP-MO975D0T MINGW64 ~/bootcamp
+$ ls
+activity-1/  first-day.txt  first-day-repo/  prework-study-guide/
+
+bradc@LAPTOP-MO975D0T MINGW64 ~/bootcamp
+$ cd actvity-1
+bash: cd: actvity-1: No such file or directory
+
+bradc@LAPTOP-MO975D0T MINGW64 ~/bootcamp
+$ cd activity-1
+
+bradc@LAPTOP-MO975D0T MINGW64 ~/bootcamp/activity-1
+$ touch hello.md
+
+bradc@LAPTOP-MO975D0T MINGW64 ~/bootcamp/activity-1
+$ ls
+hello.md
+
+bradc@LAPTOP-MO975D0T MINGW64 ~/bootcamp/activity-1
+$ pwd
+/c/Users/bradc/bootcamp/activity-1
+
+bradc@LAPTOP-MO975D0T MINGW64 ~/bootcamp/activity-1
+$ rename c:\USers\bradc\bootcamp\activity-1\hello.md world.md
+bash: rename: command not found
+
+bradc@LAPTOP-MO975D0T MINGW64 ~/bootcamp/activity-1
+$ mv c:\USers\bradc\bootcamp\activity-1\hello.md c:\USers\bradc\bootcamp\activity-1\world.md
+mv: cannot stat 'c:USersbradcbootcampactivity-1hello.md': No such file or directory
+
+bradc@LAPTOP-MO975D0T MINGW64 ~/bootcamp/activity-1
+$ mv /c/Users/bradc/bootcamp/activity-1/hello.md /c/Users/bradc/bootcamp/activity-1/world.md
+
+bradc@LAPTOP-MO975D0T MINGW64 ~/bootcamp/activity-1
+$ ls
+world.md
+
+bradc@LAPTOP-MO975D0T MINGW64 ~/bootcamp/activity-1
+$ mv /c/Users/bradc/bootcamp/activity-1/hello.md /c/Users/bradc/bootcamp/activity-1/coding.md
+mv: cannot stat '/c/Users/bradc/bootcamp/activity-1/hello.md': No such file or directory
+
+bradc@LAPTOP-MO975D0T MINGW64 ~/bootcamp/activity-1
+$ mv /c/Users/bradc/bootcamp/activity-1/world.md /c/Users/bradc/bootcamp/activity-1/coding.md
+
+bradc@LAPTOP-MO975D0T MINGW64 ~/bootcamp/activity-1
+$ ls
+coding.md
+
+bradc@LAPTOP-MO975D0T MINGW64 ~/bootcamp/activity-1
+$ mkdir day01
+
+bradc@LAPTOP-MO975D0T MINGW64 ~/bootcamp/activity-1
+$ cd day01
+
+bradc@LAPTOP-MO975D0T MINGW64 ~/bootcamp/activity-1/day01
+$ pwd
+/c/Users/bradc/bootcamp/activity-1/day01
+
+bradc@LAPTOP-MO975D0T MINGW64 ~/bootcamp/activity-1/day01
+$ mv /c/Users/bradc/bootcamp/activity-1/coding.md /c/Users/bradc/bootcamp/activity-1/day01/coding.md
+
+bradc@LAPTOP-MO975D0T MINGW64 ~/bootcamp/activity-1/day01
+$ ls
+coding.md
+
+bradc@LAPTOP-MO975D0T MINGW64 ~/bootcamp/activity-1/day01
+$ rm day01
+rm: cannot remove 'day01': No such file or directory
+
+bradc@LAPTOP-MO975D0T MINGW64 ~/bootcamp/activity-1/day01
+$ rmdir day01
+rmdir: failed to remove 'day01': No such file or directory
+
+bradc@LAPTOP-MO975D0T MINGW64 ~/bootcamp/activity-1/day01
+$ rm -r day01
+rm: cannot remove 'day01': No such file or directory
+
+bradc@LAPTOP-MO975D0T MINGW64 ~/bootcamp/activity-1/day01
+$ cd ..
+
+bradc@LAPTOP-MO975D0T MINGW64 ~/bootcamp/activity-1
+$ rm day01
+rm: cannot remove 'day01': Is a directory
+
+bradc@LAPTOP-MO975D0T MINGW64 ~/bootcamp/activity-1
+$ rm -r day01
+
+bradc@LAPTOP-MO975D0T MINGW64 ~/bootcamp/activity-1
+$ ls
+
+bradc@LAPTOP-MO975D0T MINGW64 ~/bootcamp/activity-1
+$ c:\USers\bradc\bootcamp\activity-1\hello.md
+
